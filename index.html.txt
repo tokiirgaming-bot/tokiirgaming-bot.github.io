@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artistry Paintings | Original Artwork & Custom Commissions</title>
+    <meta name="description" content="Discover stunning original paintings and custom artwork. Book art sessions, buy unique paintings, and bring color to your space.">
+    <meta name="keywords" content="paintings, art, original artwork, custom paintings, art studio, gallery">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- AOS Library for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <a href="index.html" class="brand">
+                    <i class="fas fa-palette"></i>
+                    <span>Artistry</span>
+                </a>
+                
+                <nav class="nav-menu" id="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="booking.html">Book Session</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="nav-actions">
+                        <a href="login.html" class="btn btn-ghost">Login</a>
+                        <a href="shop.html" class="btn">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </div>
+                </nav>
+                
+                <button class="mobile-menu" id="mobile-menu" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="hero-particles" id="particles"></div>
+            <div class="container">
+                <div class="hero-content" data-aos="fade-up" data-aos-delay="100">
+                    <h1 class="hero-title">
+                        <span class="gradient-text">Transform Your Space</span>
+                        <br>With Original Art
+                    </h1>
+                    <p class="hero-subtitle">
+                        Discover breathtaking original paintings and custom artwork that brings life, 
+                        color, and personality to your home or office.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="gallery.html" class="btn btn-large">
+                            <i class="fas fa-eye"></i> View Gallery
+                        </a>
+                        <a href="booking.html" class="btn btn-large btn-outline">
+                            <i class="fas fa-calendar"></i> Book a Session
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat" data-aos="fade-up" data-aos-delay="200">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Original Paintings</span>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="300">
+                            <span class="stat-number">200+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat" data-aos="fade-up" data-aos-delay="400">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image" data-aos="fade-left" data-aos-delay="200">
+                    <div class="painting-frame">
+                        <img src="images/hero-painting.jpg" alt="Featured Painting - Abstract Landscape">
+                        <div class="frame-shadow"></div>
+                    </div>
+                    <div class="floating-card" data-aos="fade-left" data-aos-delay="400">
+                        <div class="card-icon">🎨</div>
+                        <div class="card-text">
+                            <strong>New Collection</strong>
+                            <span>2024 Abstract Series</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Section -->
+        <section class="section featured" id="featured">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Featured</span>
+                    <h2 class="section-title">Latest Artwork</h2>
+                    <p class="section-description">Explore our newest creations and find the perfect piece for your space</p>
+                </div>
+                
+                <div class="featured-grid">
+                    <!-- Featured items will be populated by JavaScript -->
+                </div>
+                
+                <div class="section-footer" data-aos="fade-up">
+                    <a href="gallery.html" class="btn btn-outline">
+                        View All Artwork <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section class="section services" id="services">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Services</span>
+                    <h2 class="section-title">What We Offer</h2>
+                    <p class="section-description">From original paintings to custom commissions</p>
+                </div>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                        <h3>Original Paintings</h3>
+                        <p>Discover unique, one-of-a-kind paintings ready to transform your space.</p>
+                        <a href="gallery.html" class="service-link">Explore <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <h3>Custom Commissions</h3>
+                        <p>Get a personalized painting created just for you, based on your vision.</p>
+                        <a href="booking.html" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Art Classes</h3>
+                        <p>Join our painting workshops and unleash your inner artist.</p>
+                        <a href="booking.html" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="service-icon">
+                            <i class="fas fa-consulting"></i>
+                        </div>
+                        <h3>Art Consulting</h3>
+                        <p>Expert advice on selecting art that complements your style and space.</p>
+                        <a href="contact.html" class="service-link">Contact Us <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="section testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header" data-aos="fade-up">
+                    <span class="section-badge">Testimonials</span>
+                    <h2 class="section-title">Client Stories</h2>
+                    <p class="section-description">Hear from people who love their artwork</p>
+                </div>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial-card" data-aos="fade-up">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "The painting I purchased completely transformed my living room. 
+                            The colors are vibrant and the quality is exceptional. 
+                            I get compliments from everyone who visits!"
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="images/client1.jpg" alt="Sarah J." class="author-avatar">
+                            <div class="author-info">
+                                <strong>Sarah J.</strong>
+                                <span>Interior Designer</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "The custom portrait of my family was beyond my expectations. 
+                            The artist captured every detail perfectly. 
+                            It's now the centerpiece of our home."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="images/client2.jpg" alt="Michael T." class="author-avatar">
+                            <div class="author-info">
+                                <strong>Michael T.</strong>
+                                <span>Homeowner</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <blockquote class="testimonial-text">
+                            "The painting workshop was amazing! I learned so much and 
+                            created my first masterpiece. The instructor was patient 
+                            and incredibly talented."
+                        </blockquote>
+                        <div class="testimonial-author">
+                            <img src="images/client3.jpg" alt="Emma L." class="author-avatar">
+                            <div class="author-info">
+                                <strong>Emma L.</strong>
+                                <span>Art Student</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section cta-section">
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2>Ready to Add Color to Your Life?</h2>
+                    <p>Explore our collection or book a custom commission today</p>
+                    <div class="cta-buttons">
+                        <a href="shop.html" class="btn btn-large">Shop Now</a>
+                        <a href="contact.html" class="btn btn-large btn-outline">Get in Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="brand">
+                        <i class="fas fa-palette"></i>
+                        <span>Artistry</span>
+                    </a>
+                    <p>Bringing beauty and color to spaces through original artwork and creative expression.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://pinterest.com" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="booking.html">Book Session</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="gallery.html">Original Paintings</a></li>
+                        <li><a href="booking.html">Custom Commissions</a></li>
+                        <li><a href="booking.html">Art Classes</a></li>
+                        <li><a href="contact.html">Art Consulting</a></li>
+                        <li><a href="shop.html">Prints & Merchandise</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Subscribe to our newsletter for new artwork and special offers.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit" class="btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="footer-year"></span> Artistry Paintings. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Shipping Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
